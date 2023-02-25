@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Ajax</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- these scripts are meant to be ran individually just uncomment the one you want to investigate. They are in order of progression-->
+
+<script src="documentReady.js"></script>
+<!-- <script src="addItem.js"></script> -->
+<!-- <script src="submitToList.js"></script> -->
+<!-- <script src="printJSON.js"></script> -->
+<!-- <script src="prettyPrintJSON.js"></script> -->
+ <!--   <script src="finalScript.js"></script> -->
+</head>
+<body id="base">
+	<h1>jQuery Ajax Demo</h1>
+
+    <form id="searchform">
+    	<input type ="text" id="searchterms">
+        <input type ="submit" value="Search">
+     </form>
+
+     <div id="resultsbox">
+     	<ol id="results">
+         <!-- content will be loaded here (promise) -->
+		</ol>
+      </div>
+</body>
+</html>

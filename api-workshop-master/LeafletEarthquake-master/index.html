@@ -1,0 +1,78 @@
+<!--
+@Author: John Isaacs <john>
+@Date:   11-Apr-172017
+@Filename: index.html
+@Last modified by:   john
+@Last modified time: 16-Apr-172017
+-->
+
+
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+      <!-- default stuff -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Leaflet Earthquake</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!-- my style sheets -->
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Leaflet Stylesheet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+        <!--vendor scripts-->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/sql.js"></script>
+
+        <!-- Leaflet Script -->
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+        <!-- more scripts at the end! -->
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Death from above or below!</h1>
+                <nav>
+                    <!-- nav would go here if I had one-->
+                </nav>
+            </header>
+        </div>
+
+        <section class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                  <!-- my map -->
+                  <div id="mapid"></div>
+                </article>
+
+                <aside>
+                    <h3>What's all this then</h3>
+                    <p>Simple app detailing how to draw stuff on Leaflet maps from an api.</p>
+                    <p>Red circles are earthquakes</p>
+                    <p>Blue circles are meteor strikes</p>
+                    <button id="shakey">Load Earthquakes</button>
+                    <button id="dropey">Load Meteors</button>
+                </aside>
+
+            </div> <!-- #main -->
+        </section> <!-- #main-container -->
+
+        <!-- jquery and my scripts, always iport jquery first, other wise your own scripts may not work -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
